@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ampliva Studios | AI video ads for brands</title>
+<meta name="description" content="Short vertical AI video ads for fashion, accessories, food and local brands. Send the product, get scroll-ready creative.">
+<meta property="og:title" content="Ampliva Studios | AI video ads for brands">
+<meta property="og:description" content="Short vertical AI video ads that people actually watch.">
+<meta property="og:image" content="media/logo.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FF5A36'/%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%23111' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--red:#FF5A36;--yel:#FFD60A;--blu:#3A5BFF;--w:#fff;--sh:8px 8px 0 var(--ink);--pad:clamp(20px,4vw,40px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--w);color:var(--ink);font-family:'Space Mono',monospace;font-size:16px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--blu);outline-offset:3px}
+.h{font-family:'Archivo Black','Arial Black',Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.95;margin:0}
+.b{border:3px solid var(--ink);box-shadow:var(--sh)}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:12px 26px;font-weight:700;border:3px solid var(--ink);background:var(--w);box-shadow:4px 4px 0 var(--ink);cursor:pointer;font:inherit;font-weight:700;transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn.k{background:var(--ink);color:var(--w);box-shadow:4px 4px 0 var(--red)}
+.btn.y{background:var(--yel);color:var(--ink)}
+.top{background:var(--ink);color:var(--w);padding:14px var(--pad);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-weight:700}
+.pill{background:var(--yel);color:var(--ink);padding:4px 12px}
+main{max-width:1280px;margin:0 auto;padding:clamp(28px,5vw,56px) var(--pad) 96px;display:flex;flex-direction:column;gap:clamp(64px,9vw,112px)}
+.hero{background:var(--red);padding:clamp(24px,5vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:center}
+.hero h1{font-size:clamp(44px,8vw,112px)}
+.hero p{font-size:clamp(17px,2vw,20px);font-weight:700;max-width:34em;margin:24px 0 32px}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.card{display:flex;flex-direction:column;padding:0;background:var(--w);cursor:pointer;font:inherit;color:inherit;text-align:left;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--ink)}
+.card video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#222;border-bottom:3px solid var(--ink)}
+.cap{padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.cap b{font-family:'Archivo Black','Arial Black',Impact,sans-serif;font-weight:400;font-size:22px;text-transform:uppercase}
+.cap span{font-size:14px}
+.hero .card{max-width:340px;justify-self:center;width:100%}
+.grid{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.sec{display:flex;flex-direction:column;gap:36px}
+.sec h2{font-size:clamp(34px,5vw,56px)}
+.sec>p{margin:-16px 0 0;max-width:46em}
+.info{padding:28px;background:var(--w);display:flex;flex-direction:column;gap:12px}
+.info h3{font-family:'Archivo Black','Arial Black',Impact,sans-serif;font-weight:400;font-size:24px;margin:0}
+.info p{margin:0}
+.n{font-family:'Archivo Black','Arial Black',Impact,sans-serif;font-size:56px;line-height:1;color:var(--red);-webkit-text-stroke:2px var(--ink)}
+.cta{background:var(--ink);color:var(--w);padding:clamp(28px,5vw,56px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:28px;box-shadow:var(--sh);border:3px solid var(--ink);box-shadow:8px 8px 0 var(--red)}
+.cta h2{font-size:clamp(32px,5vw,64px)}
+.cta .contact{display:flex;flex-direction:column;gap:6px;margin-top:20px;font-weight:700}
+footer{border-top:3px solid var(--ink);padding:24px var(--pad);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px}
+dialog{border:3px solid var(--ink);box-shadow:var(--sh);background:var(--ink);color:var(--w);padding:0;max-width:min(92vw,480px);width:100%;overflow:visible}
+dialog::backdrop{background:rgba(17,17,17,.82)}
+dialog video{display:block;width:100%;max-height:78vh;aspect-ratio:9/16;background:#000}
+dialog .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;font-weight:700}
+dialog .x{background:var(--yel);color:var(--ink);border:0;font:inherit;font-weight:700;padding:8px 16px;min-height:44px;cursor:pointer}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="top"><a href="#" aria-label="Ampliva Studios"><img src="media/logo-white.png" alt="Ampliva Studios" width="134" height="52" style="display:block;height:52px;width:auto"></a><span class="pill">Taking new projects</span></div>
+<main>
+<section class="hero b" aria-labelledby="t">
+<div>
+<h1 class="h" id="t">Ads people actually watch.</h1>
+<p>I make short vertical AI video ads for fashion, accessories, food and local brands. Send me your product and get scroll-ready creative back.</p>
+<div class="row"><a class="btn k" data-wa href="#">Message me on WhatsApp</a><a class="btn" href="#work">Watch the ads</a></div>
+</div>
+<div id="hero-slot" style="display:flex;justify-content:center"></div>
+</section>
+
+<section class="sec" id="work" aria-labelledby="w">
+<h2 class="h" id="w">More ads</h2>
+<p>Concept ads made by Ampliva Studios. Tap any ad to watch it with sound.</p>
+<div class="grid" id="grid"></div>
+</section>
+
+<section class="sec" aria-labelledby="s">
+<h2 class="h" id="s">What I make</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+<div class="info b"><h3>Video ads</h3><p>Vertical clips for Reels, Shorts and TikTok, written to hold attention from the first second.</p></div>
+<div class="info b" style="background:var(--yel)"><h3>Brand photoshoots</h3><p>Product and lifestyle images without booking a studio day.</p></div>
+<div class="info b"><h3>Websites and chat</h3><p>A fast site plus WhatsApp automation so no order message goes unanswered.</p></div>
+</div>
+</section>
+
+<section class="sec" aria-labelledby="h">
+<h2 class="h" id="h">How it works</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+<div class="info b"><span class="n" aria-hidden="true">1</span><h3>Send the product</h3><p>Photos of the product, your brand colours and a few lines about who buys it.</p></div>
+<div class="info b"><span class="n" aria-hidden="true">2</span><h3>Approve the idea</h3><p>I share a script and look first, and you sign off before I build the full ad.</p></div>
+<div class="info b"><span class="n" aria-hidden="true">3</span><h3>Get your ads</h3><p>Files cut for Reels, Shorts, TikTok and your online store, ready to post.</p></div>
+</div>
+</section>
+
+<section class="cta" aria-labelledby="c">
+<div>
+<h2 class="h" id="c">Want one for your product?</h2>
+<div class="contact"><a data-mail href="#"></a><a data-wa-text data-wa href="#"></a><a data-ig href="#"></a></div>
+</div>
+<a class="btn y" data-wa href="#">Start on WhatsApp</a>
+</section>
+</main>
+<footer><span>&copy; Ampliva Studios</span><span>Lucknow, India</span></footer>
+
+<dialog id="lb" aria-label="Video player">
+<video controls playsinline></video>
+<div class="bar"><span id="cap"></span><button class="x" type="button">Close</button></div>
+</dialog>
+
+<script>
+// To change contact details, edit this block and re-upload the folder.
+const CONTACT={wa:'918175945905',waShow:'+91 81759 45905',email:'gupta642006@gmail.com',ig:'https://www.instagram.com/ampliva.stud/',igShow:'@ampliva.stud'};
+
+const ADS=[
+{id:'musak',name:'Musak',kind:'Fashion ad',bg:'#FFFFFF'},
+{id:'lensly',name:'Lensly',kind:'Eyewear ad',bg:'#FFD60A'},
+{id:'berryboy',name:'Berryboy',kind:'Backpack ad',bg:'#3A5BFF',fg:'#FFFFFF'},
+{id:'boba',name:'Boba tea',kind:'Food and drink ad',bg:'#FFFFFF'},
+{id:'streetwear',name:'Streetwear',kind:'Presenter-style ad',bg:'#FFD60A'}
+];
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const card=(a,hero)=>`<button class="card b" type="button" data-id="${a.id}" aria-label="Watch ${a.name} ${a.kind.toLowerCase()} with sound">
+<video muted loop playsinline preload="none" poster="media/${a.id}.jpg" data-src="media/${a.id}.mp4"></video>
+<span class="cap" style="background:${a.bg};color:${a.fg||'#111'}"><b>${a.name}</b><span>${a.kind}</span></span></button>`;
+document.getElementById('grid').innerHTML=ADS.slice(1).map(a=>card(a)).join('');
+document.getElementById('hero-slot').innerHTML=card(ADS[0],true);
+
+// Autoplay previews only while visible
+const io=new IntersectionObserver(es=>es.forEach(e=>{
+  const v=e.target;
+  if(e.isIntersecting&&!still){if(!v.src)v.src=v.dataset.src;v.play().catch(()=>{});}else v.pause();
+}),{threshold:.35});
+document.querySelectorAll('.card video').forEach(v=>io.observe(v));
+
+// Lightbox with sound
+const lb=document.getElementById('lb'),lv=lb.querySelector('video'),cap=document.getElementById('cap');
+document.addEventListener('click',e=>{
+  const c=e.target.closest('.card');
+  if(c){const a=ADS.find(x=>x.id===c.dataset.id);lv.src='media/'+a.id+'.mp4';lv.poster='media/'+a.id+'.jpg';cap.textContent=a.name+' · '+a.kind;lb.showModal();lv.play().catch(()=>{});}
+  else if(e.target===lb||e.target.closest('.x'))lb.close();
+});
+lb.addEventListener('close',()=>{lv.pause();lv.removeAttribute('src');lv.load();});
+
+// Contact links
+const msg=encodeURIComponent('Hi, I saw your portfolio and I want a video ad for my product.');
+document.querySelectorAll('[data-wa]').forEach(a=>{a.href='https://wa.me/'+CONTACT.wa+'?text='+msg;a.target='_blank';a.rel='noopener';});
+document.querySelectorAll('[data-wa-text]').forEach(a=>a.textContent='WhatsApp: '+CONTACT.waShow);
+document.querySelectorAll('[data-mail]').forEach(a=>{a.href='mailto:'+CONTACT.email;a.textContent='Email: '+CONTACT.email;});
+document.querySelectorAll('[data-ig]').forEach(a=>{a.href=CONTACT.ig;a.target='_blank';a.rel='noopener';a.textContent='Instagram: '+CONTACT.igShow;});
+</script>
+</body>
+</html>
